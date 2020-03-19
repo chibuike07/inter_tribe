@@ -6,8 +6,11 @@ const Links = props => {
     <Link
       to={props.nav}
       className={props.className}
-      color={props.color}
-      backgroundColor={props.backgroundColor}
+      style={{
+        color: props.color,
+        backgroundColor: props.backgroundColor,
+        textDecoration: props.textDecoration
+      }}
     >
       {props.text}
     </Link>

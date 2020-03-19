@@ -8,14 +8,14 @@ import Login from "../views/Login.jsx";
 import Signup from "../views/Signup.jsx";
 import Dashboard from "../views/Dashboard.jsx";
 import { ThemeProvider } from "../helpers/themes/ThemesProvider.helper";
-import AppBar from "./AppBar";
+import DefaultHeader from "../components/Layouts/Header.component";
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
         <div>
-          <AppBar />
+          <DefaultHeader />
           <Switch>
             <Route exact path={"/"} component={Home} />
             <Route exact path={"/about"} component={About} />

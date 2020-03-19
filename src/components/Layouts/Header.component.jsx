@@ -5,7 +5,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+import Links from "../../reuseable_component/Links";
 import React from "react";
 
 const Header = () => {
@@ -24,11 +24,31 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Tribr
+            <Links
+              text={"Tribr"}
+              nav={"/"}
+              textDecoration={"none"}
+              color={"#fff"}
+            />
           </Typography>
-          <Link to="/signup" style={{ color: "#fff", textDecoration: "none" }}>
-            <Button color="inherit">Get Started</Button>
-          </Link>
+          <Links
+            text={<Button color="inherit">About</Button>}
+            nav={"/about"}
+            color={"#fff"}
+            textDecoration={"none"}
+          />
+          <Links
+            text={<Button color="inherit">Contact</Button>}
+            nav={"/contact"}
+            color={"#fff"}
+            textDecoration={"none"}
+          />
+          <Links
+            nav={"/login"}
+            color={"#fff"}
+            textDecoration={"none"}
+            text={<Button color="inherit">Get Started</Button>}
+          />
         </Toolbar>
       </AppBar>
     </div>

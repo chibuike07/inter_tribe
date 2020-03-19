@@ -11,7 +11,7 @@ const Header = () => {
         width: "100%",
         position: "absolute",
         left: "5%",
-        top: "20%",
+        top: "15%",
         transform: "translate(-6%, -15%)"
       }}
     >

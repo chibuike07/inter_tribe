@@ -1,8 +1,13 @@
-import React from 'react';
-import {render} from 'react-dom';
-import './styles/index.css';
-import App from './components/App';
+import React from "react";
+import { render } from "react-dom";
+import "./styles/index.css";
+import App from "./components/App";
+import PersistGate from "./Config/persistor";
 
-
-render(<App />, document.getElementById('root'));
-
+const ROOT = document.getElementById("root");
+render(
+  <PersistGate>
+    <App />
+  </PersistGate>,
+  ROOT
+);

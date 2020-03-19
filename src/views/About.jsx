@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function About() {
-    return (
-        <div>
-            <h1> About Us</h1>
-        </div>
-    )
+  return (
+    <div style={{ marginTop: "10%" }}>
+      <h1> About Us</h1>
+    </div>
+  );
 }
 
-export default About
+export default About;
